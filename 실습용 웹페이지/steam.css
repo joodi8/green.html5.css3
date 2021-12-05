@@ -1,0 +1,38 @@
+body {
+  width: 2560px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #b8b6b4;
+}
+
+header {
+  width: 2560px;
+  height: 104px;
+  background-color: #171a21;
+}
+
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 960px;
+  height: 104px;
+  margin: auto;
+}
+.header_content a:hover {
+  color: white;
+}
+
+.header_menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.header_menu li {
+  padding: 8px 8px;
+}
