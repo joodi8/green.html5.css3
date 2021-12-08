@@ -6,9 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
     </style>
-    <script src="./test.js"></script>
+    <script>
+        // 변수명은 의미 있는것으로! 
+        var enScore = 99, koScore = 100;
+        var studentName = "조윤주";
+        var sum = enScore + koScore;
+        // var koScore = "100"; < 이런 문자형 숫자를 쓰고싶을때는 
+        // var sum = enScore + Number(koScore);   < 이렇게
+
+        // 논리형
+        // var flag = true;
+        // var flag = Boolean("hi");
+        var flag = Boolean(null)
+
+        
+
+
+        // 변수 값 변경
+        enScore = 100;
+
+        //  변수 출력
+        document.write("합계: " + sum + "점<br />");
+        document.write(enScore + "점<br />");
+        document.write(koScore + "점<br />"); 
+        document.write(flag);
+    </script>
 </head>
 <body>
     
