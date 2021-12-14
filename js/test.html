@@ -33,7 +33,7 @@
         // document.write(flag);
 
 
-        // -----12.14 객체생성 방법 2가지----
+        // -----12.14 객체생성 방법 ----
 
         // 1)
 
@@ -107,7 +107,7 @@
         // kkoKko.chickSound();
         
 
-        //객체 생성 방법 3 -함수화 객체
+        //3) - 함수화 객체
         // function TV(colorV, sizeV) {
         //     this.color = colorV
         //     this.size = sizeV
@@ -124,20 +124,60 @@
         // television2.printInfo();
 
 
+        // function Kkokko(chicken, chick) {
+        //     this.chickenSound = chicken,
+        //     this.chickSound = chick,
+
+        //     this.printInfo = function() {
+        //         document.write(`닭은: ${this.chickenSound}, 병아리는: ${this.chickSound}`);
+        //     }
+        // }
+
+        // var kkokkoSound = new Kkokko('cock_a_doodle_Doo', 'peep')
+        // kkokkoSound.printInfo();
+
+        // var kkokkoSound2 = new Kkokko('cluck_cluck', 'peeeee')
+        // kkokkoSound2.printInfo();
+
+
+        // 4) 프로토타입 객체 (메모리 절약)
+
+        // function TV(colorV, sizeV) {
+        //     this.color = colorV
+        //     this.size = sizeV
+        // }
+
+        // TV.prototype.printInfo = function() {
+        //     document.write(`색상: ${this.color}, 사이즈: ${this.size}`);
+        // }
+
+        // TV.prototype.price = 2200;
+
+        // var television = new TV('white', 60);
+        // television.printInfo();
+        // document.write(`가격: ${television.price}, <br />`)
+
+        // var television2 = new TV('black', 50);
+        // television2.printInfo();
+        // document.write(`가격: ${television2.price}, <br />`)
+
+
         function Kkokko(chicken, chick) {
             this.chickenSound = chicken,
-            this.chickSound = chick,
-
-            this.printInfo = function() {
-                document.write(`닭은: ${this.chickenSound}, 병아리는: ${this.chickSound}`);
-            }
+            this.chickSound = chick
         }
+        
+        Kkokko.prototype.printInfo = function() {
+            document.write(`닭은: ${this.chickenSound}, 병아리는: ${this.chickSound} <br />`);
+        }
+        
 
         var kkokkoSound = new Kkokko('cock_a_doodle_Doo', 'peep')
         kkokkoSound.printInfo();
 
         var kkokkoSound2 = new Kkokko('cluck_cluck', 'peeeee')
         kkokkoSound2.printInfo();
+
 
     </script>
 </head>
