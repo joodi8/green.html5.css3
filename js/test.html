@@ -8,29 +8,137 @@
     <style>
     </style>
     <script>
-        // 변수명은 의미 있는것으로! 
-        var enScore = 99, koScore = 100;
-        var studentName = "조윤주";
-        var sum = enScore + koScore;
-        // var koScore = "100"; < 이런 문자형 숫자를 쓰고싶을때는 
-        // var sum = enScore + Number(koScore);   < 이렇게
+        // // 변수명은 의미 있는것으로! 
+        // var enScore = 99, koScore = 100;
+        // var studentName = "조윤주";
+        // var sum = enScore + koScore;
+        // // var koScore = "100"; < 이런 문자형 숫자를 쓰고싶을때는 
+        // // var sum = enScore + Number(koScore);   < 이렇게
 
-        // 논리형
-        // var flag = true;
-        // var flag = Boolean("hi");
-        var flag = Boolean(null)
+        // // 논리형
+        // // var flag = true;
+        // // var flag = Boolean("hi");
+        // var flag = Boolean(null)
 
         
 
 
-        // 변수 값 변경
-        enScore = 100;
+        // // 변수 값 변경
+        // enScore = 100;
 
-        //  변수 출력
-        document.write("합계: " + sum + "점<br />");
-        document.write(enScore + "점<br />");
-        document.write(koScore + "점<br />"); 
-        document.write(flag);
+        // //  변수 출력
+        // document.write("합계: " + sum + "점<br />");
+        // document.write(enScore + "점<br />");
+        // document.write(koScore + "점<br />"); 
+        // document.write(flag);
+
+
+        // -----12.14 객체생성 방법 2가지----
+
+        // 1)
+
+        // var tv = new Object(); // 객체 생성
+
+        // // 속성 만들기
+        // tv.color = "black";
+        // tv.size = 50;
+        // //메소드(함수) 만들기
+        // tv.printInfo = function() {
+        //     document.write(`색상: ${this.color}, 사이즈: ${this.size}`);
+        // }
+
+        // tv.printInfo(10, 20);
+
+        // 2)
+        // var tv = {
+        //     color : 'black',
+        //     size: 50,
+        //     printInfo: function() {
+        //         document.write(`색상: ${this.color}, 사이즈: ${this.size}`);
+        //     }
+        // }
+
+        // tv.printInfo();
+        // document.write(`<br /> ${tv.color});
+
+        
+        // // 슬라이더 만들어보기(객체만들기 2번째 방법)
+        // var slide = {
+        //     size: 1200,
+        //     speed: 2000,
+        //     clickArrow: function() {
+        //         document.write(`오른쪽 가기`);
+        //     },
+        //     fadeInOut: function() {
+        //         document.write(`페이드 인아웃`)
+        //     }
+        // }
+
+        // slide.clickArrow();
+        // slide.fadeInOut();
+
+        // var weather = {
+        //     degree: 10,
+        //     wind: 30,
+        //     degreeShow: function() {
+        //         document.while (`온도: ${this.debugger}`);
+        //         },
+            
+        //     windShow: function() {
+        //         document.write (`바람: ${weather.wind}`);
+        //     }
+        // }
+
+        // weather.wind();
+        
+
+        // var kkoKko = {
+        //     chicken: 'cock_a_doodle_Doo',
+        //     chick: 'peep!',
+
+        //     chickenSound: function() {
+        //         document.write(`닭은 : ${kkoKko.chicken}`);
+        //     },
+        //     chickSound: function() {
+        //         document.write(`병아리는 : ${kkoKko.chick}`);
+        //     }
+        // }
+        // kkoKko.chickenSound();
+        // kkoKko.chickSound();
+        
+
+        //객체 생성 방법 3 -함수화 객체
+        // function TV(colorV, sizeV) {
+        //     this.color = colorV
+        //     this.size = sizeV
+
+        //     this.printInfo = function() {
+        //         document.write(`색상: ${this.color}, 사이즈: ${this.size}`);
+        //     }
+        // }
+
+        // var television = new TV('white', 60);
+        // television.printInfo();
+
+        // var television2 = new TV('black', 50);
+        // television2.printInfo();
+
+
+        function Kkokko(chicken, chick) {
+            this.chickenSound = chicken,
+            this.chickSound = chick,
+
+            this.printInfo = function() {
+                document.write(`닭은: ${this.chickenSound}, 병아리는: ${this.chickSound}`);
+            }
+        }
+
+        var kkokkoSound = new Kkokko('cock_a_doodle_Doo', 'peep')
+        kkokkoSound.printInfo();
+
+        var kkokkoSound2 = new Kkokko('cluck_cluck', 'peeeee')
+        kkokkoSound2.printInfo();
+
     </script>
 </head>
 <body>
