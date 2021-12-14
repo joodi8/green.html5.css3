@@ -141,7 +141,6 @@
 
 
         // 4) 프로토타입 객체 (메모리 절약)
-
         // function TV(colorV, sizeV) {
         //     this.color = colorV
         //     this.size = sizeV
@@ -161,23 +160,75 @@
         // television2.printInfo();
         // document.write(`가격: ${television2.price}, <br />`)
 
+        //)프로토타입 실습
 
-        function Kkokko(chicken, chick) {
-            this.chickenSound = chicken,
-            this.chickSound = chick
-        }
         
-        Kkokko.prototype.printInfo = function() {
-            document.write(`닭은: ${this.chickenSound}, 병아리는: ${this.chickSound} <br />`);
+        //객체 생성 방법 -es6
+        // class TV {
+        //     // 생성자
+        //     constructor(colorV, sizeV) {
+        //         this.color = colorV
+        //         this.size = sizeV
+        //     }
+
+        //     //메소드
+        //     printInfo() {
+        //         document.write(`색상: ${this.color}, 사이즈: ${this.size} <br />`);
+        //     }
+        // }
+
+        // class lgTV extends TV {
+        //     printLG() {
+        //         document.write(`LG 티비 입니다. <br />`);
+        //     }
+        // }
+
+        // class samsungTV extends TV {
+        //     printsamsung() {
+        //         document.write(`삼성 티비 입니다.<br />`);
+        //     }
+        // }
+
+        // let lg = new lgTV('black', 50);
+        // let samsung = new samsungTV();
+
+        // lg.printLG();
+        // lg.printInfo();
+
+        // var kkoKko = {
+        //     chicken: 'cock_a_doodle_Doo',
+        //     chick: 'peep!',
+
+        class kkokko {
+            constructor(a, b) {
+                this.chickenSound = a
+                this.chickSound = b
+            }
+
+                printInfo() {
+                    document.write(`닭은: ${this.chickenSound}, 병아리는: ${this.chickSound}<br />`);
+                }
         }
+
+        class chickenkko extends kkokko {
+            printChicken() {
+                document.write(`치킨은 맛있어요.<br />`);
+            }
+        }
+
+        class chickkko extends kkokko {
+            printChick() {
+                document.write(`병아리는 귀여워요.<br />`);
+            }
+        }
+
+        let chicken = new chickenkko ('cock_a_doodle_Doo', 'peep!');
+        let chic = new chickkko ('cock_a_doodle_Doo', 'peep!')
         
-
-        var kkokkoSound = new Kkokko('cock_a_doodle_Doo', 'peep')
-        kkokkoSound.printInfo();
-
-        var kkokkoSound2 = new Kkokko('cluck_cluck', 'peeeee')
-        kkokkoSound2.printInfo();
-
+        chicken.printInfo();
+        chicken.printChicken();
+        chic.printChick();
+        
 
     </script>
 </head>
