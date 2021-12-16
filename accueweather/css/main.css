@@ -47,10 +47,36 @@
     line-height: 51px;
 }
 
-#main_content > #main_container > section > #weather_loacation a span {
+#main_content > #main_container > section > #weather_location a span {
     display: inline-block;
     font-size: 18px;
 }
+
+#main_content > #main_container > section > #weather_location a span:nth-child(1) {
+    width: 60%;
+}
+
+#main_content > #main_container > section > #weather_location a span:nth-child(2) {
+    width: 20%;
+}
+
+#main_content > #main_container > section > #weather_location a span:nth-child(3) {
+    width: 15%;
+}
+
+#main_content > #main_container > section > #weather_location a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* 메인 추가기상 예보 */
+#main_content > #main_container > section > #weather_add {
+    height: 50px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+
 
 /* 메인 섹션 공통 */
 
