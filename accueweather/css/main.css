@@ -28,6 +28,30 @@
     z-index: 0 !important;
     margin: 0 auto;
 }
+
+/* 메인 날씨(기상 상태) */
+
+#main_content > #main_container > section > #weather_loacation {
+    height: 400px;
+    margin-bottom: 20px;
+    background: #dbdbdb;
+
+}
+
+#main_content > #main_container > section > #weather_loacation a {
+    display: inline-block;
+    width: calc(50% - 8px);
+    height: 51px;
+    background: white;
+    margin: 2px;
+    line-height: 51px;
+}
+
+#main_content > #main_container > section > #weather_loacation a span {
+    display: inline-block;
+    font-size: 18px;
+}
+
 /* 메인 섹션 공통 */
 
 #main_container > #main_section > section {
