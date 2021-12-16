@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* 메인 컨텐츠 */
 #main_content {
-    background: #dbdbdb;
+    background: #d8d8d8;
 }
 
 #main_content > div {
@@ -18,7 +18,7 @@
 /* 메인 지도(가상레이더) */
 #main_content > #main_container > section > #weather_map {
     height: 400px;
-    margin: 20px;
+    margin-bottom: 20px;
     background: white;
 }
 
@@ -31,14 +31,14 @@
 
 /* 메인 날씨(기상 상태) */
 
-#main_content > #main_container > section > #weather_loacation {
+#main_content > #main_container > section > #weather_location {
     height: 400px;
     margin-bottom: 20px;
-    background: #dbdbdb;
+    background: #d8d8d8;
 
 }
 
-#main_content > #main_container > section > #weather_loacation a {
+#main_content > #main_container > section > #weather_location a {
     display: inline-block;
     width: calc(50% - 8px);
     height: 51px;
