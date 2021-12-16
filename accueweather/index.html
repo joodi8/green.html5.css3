@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./libarary/css/all.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header id="main_header">
+        <!-- nav 메뉴 -->
+        <div class="gnb_container">
+            <div class="gnb menu">
+                <div class="logo">
+                    <a href="#"><img src="./img/logo.svg" alt="로고"></a>
+                    <ul class="nav">
+                        <li><a href="#">레이더 및 지도</a></li>
+                        <li><a href="#">동영상</a></li>
+                        <li><a href="#">악천후 기상</a></li>
+                        <li><a href="#">개인화된 예보</a></li>
+                        <li><a href="#">설정</a></li>
+                    </ul>
+                    <div class="setting">
+                        <a href="#"><i class="fas fa-cog"></i></a>
+                    </div>
+                    <div class="trigger">
+                        <a href="#" class="mobile hamburger"><i class="fas fa-cog"></i></a>
+                        <a href="#" class="mobile close"><i class="fas fa-cog"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="active_path">
+            <div class="active_bar"></div>
+        </div>
+        <!-- nav 하위메뉴 -->
+        <div class="lnb_container"> 
+            <ul class="lnb">
+                <li>레이더 및 지도</li>
+                <li>레이더</li>
+                <li>위성</li>
+                <li>대한민국 기상 레이더</li>
+            </ul>
+            <ul class="lnb">
+                <li>동영상</li>
+                <li>인기정보</li>
+                <li>전문가예보</li>
+                <li>스톰 체이서</li>
+            </ul>
+            <ul class="lnb">
+                <li>악천후 기상</li>
+                <li>허리케인</li>
+            </ul>
+        </div>
+        <!-- 검색바 -->
+        <div class="search_bar"></div>
+    </header>
+
+    <div id="main_content">
+        <div id="main_top">
+            <article>
+                <div>
+                    <img src="http://via.placeholder.com/960x250.png" alt="광고">
+                </div>
+            </article>
+        </div>
+        <div id="main_container">
+            <section id="main_section">
+                <article>
+                    <h5>대한민국 기상 레이더</h5>
+                    <div id="weather_map"></div>
+                </article>
+                <article id="weather_loacation">
+                    <h5>대한민국 기상 상태</h5>
+                </article>
+                <article id="weather_add">
+                    <div id="add">
+                        추가 기상 예보 대한민국개
+                    </div>
+                </article>
+            </section>
+            <aside id="main_aside">
+                <div>
+                    <img src="http://via.placeholder.com/210x400.png" alt="광고">
+                </div>
+                <div>
+                    <img src="http://via.placeholder.com/210x400.png" alt="광고">
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <div id="mobile_menu"></div>
+    
+    <footer id="main_footer">
+        <div></div>
+        <div></div>
+    </footer>
+</body>
+</html>

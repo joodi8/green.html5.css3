@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* 메인 컨텐츠 */
+#main_content {
+    background: #dbdbdb;
+}
+
+#main_content > div {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 15px 0;
+}
+
+#main_content > #main_top div {
+    text-align: center;
+}
+
+/* 메인 지도(가상레이더) */
+#main_content > #main_container > section > #weather_map {
+    height: 400px;
+    margin: 20px;
+    background: white;
+}
+
+#main_content > #main_container > section > #wether_map > #map {
+    width: 90%;
+    height: 360px;
+    z-index: 0 !important;
+    margin: 0 auto;
+}
+/* 메인 섹션 공통 */
+
+#main_container > #main_section > section {
+    width: 730px;
+    float: left;
+}
+
+/* 메인 어사이드 공통 */
+
+#main_content > #main_container > aside {
+    width: 210px;
+    float: right;
+}
