@@ -80,7 +80,7 @@
 
 /* 메인 섹션 공통 */
 
-#main_container > #main_section > section {
+#main_content > #main_container > section {
     width: 730px;
     float: left;
 }
