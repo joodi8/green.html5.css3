@@ -201,6 +201,14 @@ ul { list-style: none; }
         display: block;
     }
 
+    #main_header > #search_box > div#search_bar {
+        width: 85vw;
+    }
+    
+    #main_header > #search_box > div#current_location {
+        width: 85vw;
+    }
+
     #main_footer > div:nth-child(2) > div {
         font-size: 11px;
         text-align: left;
@@ -215,6 +223,10 @@ ul { list-style: none; }
 
     #main_header .gnb, .lnb {
         width: 90vw;         
+    }
+
+    #main_header > #search_box > div#search_bar {
+        width: 85vw;
     }
 
     #main_footer > div:nth-child(2) > div {
