@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">버튼</button>
+    <script src="./event.js"></script>
+    <script>
+
+        $("#btn").click(function(){
+            alert("hello!");
+        });
+
+        // $('#btn').on("click mouseover", function(){
+        //     alert("hello!");
+        // });
+
+        // $('#btn').on({
+        //     "click mouseover" : function() {
+        //         alert("hello!");
+        //     }
+        // })
+
+        // $('#btn').on({
+        //     "click": function() {
+        //         alert("hello! click");
+        //     },
+        //     "mouseover": function() {
+        //         alert("hello! mouseover");
+        //     }
+        // });
+
+        // 이벤트 강제실행 방법 2가지 
+        // $("#btn1").click();   
+        // or
+        // $("#btn1").trigger("mouseover");
+
+        // 연결된 이벤트 제거방법
+        // $(".btn1").off("A");  A에 적용되어 있는 이벤트이름   
+    </script>
+</body>
+</html>
