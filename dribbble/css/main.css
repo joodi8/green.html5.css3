@@ -14,10 +14,12 @@
     width: 150px;
     height: 40px;
     margin-right: 40px;
-    /* text-align: center; */
+    text-align: center;
+    line-height: 40px;
 }
 
 #nav_leftItem a {
+    /* display: inline-block; */
     border: 1px solid #e7e7e9;
     border-radius: 8px;
     width: 115px;
@@ -52,6 +54,8 @@
     width: 200px;
     height: 40px;
     color: #0d0c22;
+    text-align: center;
+    line-height: 40px;
 }
 
 #nav_rightItem a {
