@@ -7,7 +7,7 @@
 }
 a { text-decoration: none !important; }
 img { border: 0; }
-ul { list-style: none; }
+ul, ol { list-style: none; }
 
 .gnb_box {
     background: #fff;
@@ -151,27 +151,24 @@ ul { list-style: none; }
     flex-direction: column;
 }
 
+
+.gnb_box > .member_box > .member_menu {
+    padding: 0 5px;
+    font-size: 0.7em; 
+}
+
+
+.gnb_box > .member_box > .member_button {
+    width: 165px;
+}
+
+
+
+
 @media screen and (max-width: 919px) {}
 @media screen and (min-width: 920px) and (max-width: 1300px) {
     .gnb_box > .gnb_menu > li {
         padding: 0 6px;
     }
-
-    /* @media screen and (orientation : Start a project) {
-        .member_button > a:after {
-            content: 'Start a project';
-        }
-    } */
-
-    .gnb_box > .member_box > .member_menu {
-        padding: 0 5px;
-        font-size: 0.7em; 
-    }
-
-
-    .gnb_box > .member_box > .member_button {
-        width: 165px;
-    }
-
 }
 @media screen and (min-width: 1131px) {}
