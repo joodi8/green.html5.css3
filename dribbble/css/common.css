@@ -162,7 +162,20 @@ ul, ol { list-style: none; }
     width: 165px;
 }
 
+/* 푸터 */
+footer {
+    width: 100%;
+    height: 565px;
+    background: #f9f8fd;
+}
 
+.footer_container {
+    width: 60%;
+    height: 565px;
+    padding: 0 72px;
+    margin: 0 auto;
+    background: rgb(114, 114, 114);
+}
 
 
 @media screen and (max-width: 919px) {}
