@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #btn {
+            opacity: 0.3;
+        } */
+    </style>
+
+    <script>
+    
+    $(document).ready(function() {
+        
+        if($("#i").is(":checked")){
+            $("#btn").css("opacity", "1");
+        } else {
+            $("#btn").css("opacity", "0.3");
+        }
+        
+    });
+    </script>
+</head>
+<body>
+    <div class="box">
+        <input type="checkbox" id="i"> <label for="i">I accept</label>
+    </div>
+    <input type="submit" style="opacity: 0.3" value="submit" id="btn" />
+</body>
+<script src="./jquery-3.6.0.min.js"></script>
+</html>
