@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../accueweather/js/jquery-3.6.0.min.js"></script>
+    <style>
+        .content {
+            display: none;
+        }
+    </style>
+    <script>
+        // $(".content").hide();
+        
+        // $(".btn").click(function(){
+            //     $(".content").show();
+            // });
+            
+            
+            $(".btn").click(function(){
+                $(".content").css("display", "block");
+            });
+            
+            
+            // $(".btn").on("click", function(){
+                //     $(".content").css("display", "block");
+                // });
+    </script>
+</head>
+<body>
+    <p class="content">This paragraph refers two classes.</p>
+    <button class="btn">Click to remove all classes</button>
+</body>
+<script src="./jquery-3.6.0.min.js"></script>
+</html>
