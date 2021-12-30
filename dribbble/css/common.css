@@ -187,18 +187,22 @@ footer {
 #footer_side {
     width: 180px;
     height: 308px;
-    font-size: 0.8em;
+    font-size: 0.7em;
     color: #6e6d7a;
 }
 
 #footer_content {
     width: 45%;
     height: 308px;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 #footer_content > ul > p {
     font-weight: bold;
+}
+#footer_content > ul > ul > p {
+    font-weight: bold;
+    margin-top: 16px;
 }
 
 #footer_content a {
